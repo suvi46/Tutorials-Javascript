@@ -50,3 +50,5 @@ switch (browser) {
     console.log("please pass the right browser");
     break;
 }
+
+// we can use to setup mulitpe env : dev,qa ,stage,uat
