@@ -52,3 +52,14 @@ switch (browser) {
 }
 
 // we can use to setup mulitpe env : dev,qa ,stage,uat
+function playGame(playerChoice) {
+  switch (playerChoice) {
+    case "rock":
+      console.log("winner is rock");
+    case "paper":
+      console.log("winner is paper");
+    case "m":
+      console.log("winner is m");
+  }
+}
+playGame("rock");

@@ -21,6 +21,7 @@ var pop = "hi pop";
 function rel() {
   var top = "hello top"; // Function-scoped
   console.log(top); // "hello top"
+  console.log(pop);
 }
 rel();
 console.log(pop); // "hi pop"
@@ -83,7 +84,7 @@ console.log(msg); // 55 (global `msg`)
 let flag2;
 console.log(flag2); // undefined
 
-//reinitialize variable
+//reinitialize(reassignment) variable
 let n = "start";
 console.log("initial: " + n);
 n = "start new";
@@ -101,6 +102,7 @@ console.log("Starting validations for `let` variables:");
 
 // Default value when not defined
 const flag1 = 55;
+//flag1 = 12;//throws error of reassignment not allowed
 console.log(flag1); // undefined
 function test() {
   const flag1 = 56;
